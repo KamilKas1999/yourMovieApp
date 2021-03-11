@@ -1,0 +1,28 @@
+$height : 32px;
+.NavLinkItem {
+  margin: 10px 0;
+  box-sizing: border-box;
+  display: block;
+  width: 200px;
+  text-align: center;
+  height: 100%;
+
+  a {
+    color: #eee;
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    
+  }
+  a:hover {
+    color: #111;
+    background-color: #7C511E
+  }
+  a:active {
+  }
+  a.active {
+    color: #111;
+    background-color: #7C511E
+    ;
+  }
+}
