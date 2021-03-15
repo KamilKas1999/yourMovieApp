@@ -1,0 +1,14 @@
+.MostPopularShort {
+  width: 90%;
+  margin: auto;
+  h1 {
+    color: #111;
+    width: 100%;
+  }
+  .Array {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+}

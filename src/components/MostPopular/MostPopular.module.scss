@@ -1,0 +1,10 @@
+.MostPopular{
+    width: 80%;
+    margin: auto;
+    max-height: 600px;
+    overflow-y: scroll;
+    margin-top: 20px;
+    display: flex;   
+    flex-flow:row wrap;
+    justify-content: space-around;
+}

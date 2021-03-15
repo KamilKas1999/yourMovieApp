@@ -1,9 +1,9 @@
 import React from 'react';
 import classes from './Top250element.module.scss'
 const top250element = (props) => {
-    const {id,title,image, rank,year, imDbRating, imDbRatingCount} = props.element;
+    const {title,image, rank,year, imDbRating, imDbRatingCount} = props.element;
     return (<div className={classes.Top250element}>
-        <div><img src={image}/></div>
+        <div><img src={image} alt = 'poster'/></div>
         <div className = {classes.Info}>
             <h2>{rank}. {title}</h2>
             <h3>{year}</h3>

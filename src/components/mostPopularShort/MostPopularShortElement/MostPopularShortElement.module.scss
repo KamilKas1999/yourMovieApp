@@ -1,0 +1,16 @@
+.MostPopularShortElement{
+    color: black;
+    width: 25%;
+    img{
+        height: 500px;
+    }
+    @media (max-width: 1700px){
+        width: 33%;
+    }
+    @media (max-width: 1200px){
+        width: 50%;
+    }
+    @media (max-width: 800px){
+        width: 100%;
+    }
+}

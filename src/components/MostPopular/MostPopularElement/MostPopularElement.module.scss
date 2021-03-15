@@ -1,0 +1,38 @@
+.MostPopularElement {
+
+  color: black;
+  background-color: rgb(235, 233, 233);
+  box-shadow: chartreuse;
+  max-width: 200px;
+  border: 1px solid black;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin: 10px 20px;
+  cursor: pointer;
+  img {
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+  }
+  h4,
+  p {
+    margin: 0;
+  }
+  div {
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #90cea1;
+    border: 1px black solid;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top:-320px;
+    right: -150px;
+  }
+  transition: 300ms ease-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+}

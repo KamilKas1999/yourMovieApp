@@ -1,0 +1,9 @@
+.InTheaters{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-height: 600px;
+    overflow-y: scroll;
+}

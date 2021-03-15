@@ -1,0 +1,33 @@
+.InTheatersElement {
+  position: relative;
+  width: 600px;
+  max-height: 300px;
+  display: flex;
+  flex-flow: row;
+  border: 1px solid black;
+  border-start-end-radius: 55px;
+  background-color: #eee;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  div {
+    text-align: center;
+    width: 100%;
+  }
+
+  .Overview {
+    max-height: 50%;
+    overflow-y: scroll;
+  }
+  .Vote {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    background-color: #01b4e4;
+    border-radius: 100%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}
