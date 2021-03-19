@@ -9,15 +9,20 @@ const inTheatersElement = (props) => {
     overview,
   } = props.info;
   const poster = "https://image.tmdb.org/t/p/w200" + poster_path;
+
+  const navigate = () => {
+    props.history.push(props.link);
+  };
+
   return (
     <div className={classes.InTheatersElement}>
       <div className={classes.Vote}>
         <p>{vote_average}</p>
       </div>
-      <img src={poster} alt="poster"></img>
+      <img src={poster} alt="poster" onClick={navigate}></img>
       <div>
         <div>
-          <h3>{title}</h3>
+          <h3 onClick={navigate}>{title}</h3>
           <p>{release_date}</p>
         </div>
 

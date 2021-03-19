@@ -32,11 +32,12 @@ const MostPopular = (props) => {
     };
     sendRequest(mode);
   }, [mode, key]);
-
+  console.log(props);
   let elementArray = null;
   if (data) {
     elementArray = data.map((el, id) => {
-      return <MostPopularElement key={id} info={el} />;
+      const link = "/details/" + mode + "?id=" + el.id;
+      return <MostPopularElement key={id} info={el} link = {link} {...props} />;
     });
   }
 

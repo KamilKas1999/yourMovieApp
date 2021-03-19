@@ -5,6 +5,7 @@ import Movies from "../containers/Movies/Movies";
 import Series from "../containers/Series/Series";
 //import MostPopularShort from "../components/mostPopularShort/MostPopularShort";
 import SearchResult from "../components/SearchResult/SearchResult";
+import Details from "../containers/Details/Details";
 const layout = (props) => {
   return (
     <React.Fragment>
@@ -14,6 +15,7 @@ const layout = (props) => {
       <Route path="/search" component={SearchResult} />
       <Route path="/movies" component={Movies} />
       <Route path="/series" component={Series} />
+      <Route path = "/details" component={Details}/>
     </React.Fragment>
   );
 };

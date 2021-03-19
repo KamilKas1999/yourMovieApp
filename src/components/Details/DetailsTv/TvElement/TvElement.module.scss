@@ -1,0 +1,23 @@
+.TvElement {
+  width: 890px;
+  height: 500px;
+  margin: auto;
+  position: relative;
+  z-index: 0;
+  img {
+    height: 100%;
+    opacity: 0.8;
+    filter: blur(1px);
+    filter: contrast(50%);
+    border: 2px solid black
+  }
+  h1 {
+    color: white;
+    display: block;
+    margin: auto;
+    top: 10px;
+    left: 100px;
+    position: absolute;
+    z-index: 1;
+  }
+}

@@ -10,14 +10,18 @@ const Peak = (props) => {
     );
   };
 
+  const navigate = () => {
+    props.history.push("/");
+  };
+
   return (
     <div className={classes.Peak}>
-      <div>YourMovieApp</div>
+      <div onClick = {navigate}>YourMovieApp</div>
 
       <input ref={input} type="text" />
       <select ref={select}>
         <option>Movie</option>
-        <option>Series</option>
+        <option>Tv</option>
       </select>
       <button onClick={onClick}>Search</button>
     </div>
