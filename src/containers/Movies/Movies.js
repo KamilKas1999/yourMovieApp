@@ -11,7 +11,7 @@ const movies = (props) => {
     // { link: "/movies/top250", text: "Top 250" },
     { link: "/movies/mostPopular", text: "Most popular" },
     { link: "/movies/inTheaters", text: "In theaters" },
-    { link: "/movies/comingSoon", text: "Coming soon" },
+    // { link: "/movies/comingSoon", text: "Coming soon" },
   ];
   return (
     <div>
@@ -20,7 +20,7 @@ const movies = (props) => {
       {/* <Route path="/movies/top250" exact component={Top250} /> */}
       <Route path="/movies/mostPopular" exact component={MostPopular} />
       <Route path="/movies/inTheaters" exact component={InTheater} />
-      <Route path="/movies/comingSoon" exact component={ComingSoon} />
+      {/* <Route path="/movies/comingSoon" exact component={ComingSoon} /> */}
     </div>
   );
 };

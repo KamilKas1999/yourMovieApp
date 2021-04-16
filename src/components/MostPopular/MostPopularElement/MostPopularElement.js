@@ -8,7 +8,6 @@ const MostPopularElement = (props) => {
     props.history.push(props.link);
   };
 
-  console.log(props);
   return (
     <div className={classes.MostPopularElement} onClick={navigate}>
       <img src={poster} alt="poster"></img>

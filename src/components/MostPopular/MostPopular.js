@@ -32,7 +32,6 @@ const MostPopular = (props) => {
     };
     sendRequest(mode);
   }, [mode, key]);
-  console.log(props);
   let elementArray = null;
   if (data) {
     elementArray = data.map((el, id) => {

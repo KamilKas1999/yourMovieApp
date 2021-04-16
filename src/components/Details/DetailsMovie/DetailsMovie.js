@@ -23,6 +23,6 @@ const DetailsMovie = (props) => {
   }, []);
 
 
-  return <React.Fragment>{data ? <MovieElement info={data} /> : null}</React.Fragment>
+  return <React.Fragment>{data ? <MovieElement info={data} /> : <p>Loading</p>}</React.Fragment>
 };
 export default DetailsMovie;

@@ -1,0 +1,16 @@
+.Seasons{
+    width: 100%;
+    .Season{
+        display: flex;
+        width: 90%;
+        margin: auto;
+        border-top: 1px solid #01b4e4;
+        img{
+            height: 200px;
+            margin: 10px;
+        }
+        p{
+            padding: 10px;
+        }
+    }
+}
