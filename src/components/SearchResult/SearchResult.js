@@ -34,7 +34,7 @@ const SearchResult = (props) => {
   let elementArray = null;
   if (data) {
     elementArray = data.map((el, id) => {
-      const link = `/details/${params.type.toLowerCase()}/?id=${el.id}`;
+      const link = `/details/${params.type.toLowerCase()}/${el.id}`;
       return <SearchElement key={id} info={el} {...props} link={link} />;
     });
   }

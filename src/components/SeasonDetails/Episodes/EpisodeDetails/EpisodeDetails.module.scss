@@ -1,0 +1,35 @@
+.Episode {
+  display: flex;
+  width: 100%;
+  border: 1px solid #01b4e4;
+  margin: 20px 0;
+  border-radius: 10px;
+  min-width: 250px;
+  .Image {
+    margin-top: 10px;
+    width: 30%;
+    align-items: center;
+    img {
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+  }
+  .Detail {
+    width: 70%;
+    text-align: center;
+  }
+  img {
+    width: 200px;
+    height: 113px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .Episode {
+    display: block;
+    .Image,
+    .Detail {
+      width: 100%;
+    }
+  }
+}

@@ -10,11 +10,10 @@ const DetailsMovie = (props) => {
   for (let param of query.entries()) {
     params[param[0]] = param[1];
   }
-
   useEffect(() => {
     axios
       .get(
-        `https://api.themoviedb.org/3/movie/${params.id}?api_key=${context.appKey}`
+        `https://api.themoviedb.org/3/movie/${props.match.params.movieId}?api_key=${context.appKey}`
       )
       .then((data) => {
         console.log(data.data);

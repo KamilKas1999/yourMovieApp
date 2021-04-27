@@ -19,7 +19,7 @@ const InTheater = (props) => {
   let array = null;
   if (data) {
     array = data.map((el, id) => {
-      const link = "/details/movie/" + "?id=" + el.id;
+      const link = "/details/movie/" + el.id;
       return <InTheatersElement key={id} info={el} {...props} link = {link} />;
     });
   }

@@ -35,7 +35,7 @@ const MostPopular = (props) => {
   let elementArray = null;
   if (data) {
     elementArray = data.map((el, id) => {
-      const link = "/details/" + mode + "?id=" + el.id;
+      const link = "/details/" + mode + "/" + el.id;
       return <MostPopularElement key={id} info={el} link = {link} {...props} />;
     });
   }

@@ -19,7 +19,7 @@ const TvElement = (props) => {
     genres,
     networks,
     original_language,
-    episode_run_time, seasons
+    episode_run_time, seasons, id
   } = props.info;
   const imgSrc = "https://image.tmdb.org/t/p/w500" + backdrop_path;
   const posterSrc = "https://image.tmdb.org/t/p/w200" + poster_path;
@@ -49,7 +49,7 @@ const TvElement = (props) => {
           <p>{next_episode_to_air.air_date}</p>
         </div>
       ) : null}
-      <Seasons seasons = {seasons}/>
+      <Seasons seasons = {seasons} id= {id}/>
       <div className={classes.Details}>
         <p>Seasons : {number_of_seasons}</p>
         <p>Episodes : {number_of_episodes}</p>
